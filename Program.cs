@@ -15,7 +15,12 @@ namespace CSharpNumberGuesser
     {
       var min = 1;
       var max = 100;
-      var compGuess = Math.Floor((min + max) / 2);
+      //   test output
+      Console.WriteLine("Pick a number between 1 and 100");
+      Console.WriteLine("When you're ready, type -- ready -- below and press Enter");
+
+
+      //   var compGuess = Math.Floor((min + max) / 2);
     }
   }
 }
