@@ -1,7 +1,6 @@
 ﻿// DONE set variables for min and max numbers
-// DONE generate randomNumber between 1 and 100
 
-// TODO set variable for userGuess
+// TODO generate randomNumber between 1 and 100
 // TODO determine if userGuess is higher or lower than randomNumber
 // TODO let user guess again
 
@@ -15,12 +14,21 @@ namespace CSharpNumberGuesser
     {
       var min = 1;
       var max = 100;
-      //   test output
-      Console.WriteLine("Pick a number between 1 and 100");
+      var playGame = false;
+      Console.WriteLine("Pick a number between 1 and 100 and I'll guess it!");
       Console.WriteLine("When you're ready, type -- ready -- below and press Enter");
+      var ready = Console.ReadLine();
+      if (ready == "ready")
+      {
+        playGame = false;
+      }
 
+      while (!playGame)
+      {
+        var compGuess = Math.Floor((min + max) / 2);
+        Console.WriteLine($"Is this your number? -- {compGuess}");
+      }
 
-      //   var compGuess = Math.Floor((min + max) / 2);
     }
   }
 }
