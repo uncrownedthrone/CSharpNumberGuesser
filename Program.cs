@@ -2,8 +2,8 @@
 // DONE generate randomNumber between 1 and 100
 // DONE add console output messages
 // DONE determine if userGuess is higher or lower than randomNumber
+// DONE let user guess again
 
-// TODO let user guess again
 
 using System;
 
