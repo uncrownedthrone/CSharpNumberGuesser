@@ -28,9 +28,17 @@ namespace CSharpNumberGuesser
       {
         var compGuess = Math.Floor((min + max) / 2);
         Console.WriteLine($"Is this your number? -- {compGuess}");
-        Console.WriteLine("If it's higher, type -- higher -- and press Enter");
-        Console.WriteLine("If it's lower, type -- lower -- and press Enter");
-        Console.WriteLine("If I guessed it, type -- yes -- and press Enter");
+        Console.WriteLine("Higher? Type -- higher -- and press Enter");
+        Console.WriteLine("Lower? Type -- lower -- and press Enter");
+        Console.WriteLine("Did I get it? Then type -- yes -- and press Enter");
+        var checkGuess = Console.ReadLine();
+        if (checkGuess == "yes")
+        {
+          playGame = true;
+          Console.WriteLine("I beat you :) Play again?");
+          Console.WriteLine("Type -- yes -- and press Enter");
+          Console.WriteLine("Type -- no -- and press Enter");
+        }
       }
 
     }
