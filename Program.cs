@@ -16,9 +16,12 @@ namespace CSharpNumberGuesser
       var min = 1.0;
       var max = 100.0;
       var playGame = false;
+      string name;
 
-      Console.WriteLine("Pick a number between 1 and 100 and I'll guess it!");
-      Console.WriteLine("When you're ready, type | ready | below and press Enter");
+      Console.WriteLine("Hi there! Who are you?");
+      name = Console.ReadLine();
+      Console.WriteLine($"Hi {name}!");
+      Console.WriteLine("When you're ready, type | ready | and press Enter");
       var ready = Console.ReadLine();
       if (ready == "ready")
       {
